@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Game_Example_gen_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y6v-GY-JH3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azA-2h-peg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </sceneKitView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PJ-q6-jS0">
+                                <rect key="frame" x="10" y="44" width="394" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AXr-ee-BN1" firstAttribute="trailing" secondItem="0PJ-q6-jS0" secondAttribute="trailing" constant="8" id="9XP-Th-Lkn"/>
+                            <constraint firstItem="azA-2h-peg" firstAttribute="top" secondItem="Y6v-GY-JH3" secondAttribute="top" id="Bmz-Ng-VbE"/>
+                            <constraint firstItem="azA-2h-peg" firstAttribute="leading" secondItem="AXr-ee-BN1" secondAttribute="leading" id="Ckw-Qn-L4b"/>
+                            <constraint firstItem="0PJ-q6-jS0" firstAttribute="top" secondItem="AXr-ee-BN1" secondAttribute="top" id="JGw-Lx-vby"/>
+                            <constraint firstItem="azA-2h-peg" firstAttribute="trailing" secondItem="AXr-ee-BN1" secondAttribute="trailing" id="QXE-QZ-KdN"/>
+                            <constraint firstItem="AXr-ee-BN1" firstAttribute="trailing" secondItem="0PJ-q6-jS0" secondAttribute="trailing" constant="10" id="VF6-lR-f3d"/>
+                            <constraint firstItem="0PJ-q6-jS0" firstAttribute="top" secondItem="AXr-ee-BN1" secondAttribute="top" id="X16-nJ-les"/>
+                            <constraint firstAttribute="bottom" secondItem="azA-2h-peg" secondAttribute="bottom" id="hnB-Q8-VSq"/>
+                            <constraint firstItem="0PJ-q6-jS0" firstAttribute="leading" secondItem="AXr-ee-BN1" secondAttribute="leading" constant="8" id="otf-dW-ene"/>
+                            <constraint firstItem="0PJ-q6-jS0" firstAttribute="leading" secondItem="AXr-ee-BN1" secondAttribute="leading" constant="10" id="zIX-Js-nNc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AXr-ee-BN1"/>
+                    </view>
+                    <connections>
+                        <outlet property="scnView" destination="azA-2h-peg" id="eoa-a4-30a"/>
+                        <outlet property="scoreLabel" destination="0PJ-q6-jS0" id="9Z8-2J-pda"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+</document>
